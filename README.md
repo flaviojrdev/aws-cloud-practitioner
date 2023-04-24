@@ -9,7 +9,8 @@
 | **TOTAL**                | **100%**   |
 
 - **Tempo**: 90 minutos (Podendo solicitar mais 30 minutos caso faça em língua estrangeira).
-- **Acertos mínimos**: 70% (50 das 65 questões).
+- **Questões não pontuadas**: 15 das 65 questões são apenas testes para provas futuras e não contabilizam pontos.
+- **Acertos mínimos**: 70% (35 das 50 questões pontuadas).
 
 # Conceitos da Cloud & AWS
 
@@ -22,14 +23,31 @@
 - O cliente é responsável pela segurança **na** nuvem e a AWS a segurança e infraestrutura **da** nuvem.
 - A AWS protege o data center, enquanto o cliente protege as aplicações.
 
-### 🏗 AWS Well-Architected Framework (6 pilares)
+### 🏗 AWS Well-Architected Framework (6 pilares): Melhores Práticas
 
-- **Excelência Operacional**:
-- **Segurança**:
-- **Confiabilidade**:
-- **Eficiência de Desempenho**:
-- **Otimização de Custos**:
-- **Arquitetura**:
+**Excelência Operacional**: Execução e monitoramento sistemas e melhoria contínua de processos e procedimentos.
+- Performar operações como código.
+- Mudanças frequentes, pequenas e reversíveis.
+- Refinar processos operacionais frequentemente.
+- Antecipar falhas.
+- Aprender com as falhas operacionais.
+
+**Segurança**
+- Implementar fundamentos de segurança sólidos.
+- Habilitar rastreamento.
+- Aplicar segurança em todas as camadas.
+- Automatizar melhores práticas de segurança.
+- Proteger dados em trânsito e parados.
+- Manter pessoas longe dos dados.
+- Preparar-se para eventos de segurança.
+
+**Confiabilidade**
+
+**Eficiência de Desempenho**
+
+**Otimização de Custos**
+
+**Sustentabilidade**
 
 # Serviços da AWS
 
@@ -76,7 +94,7 @@
 
 <hr>
 
-### Contêineres
+### 📦 Contêineres
 
 **ECS (Elastic Container Service)**
 
@@ -178,7 +196,7 @@
 
 **GuardDuty**
 
-**IAM (Identity and Acess Management)
+**IAM (Identity and Acess Management)**
 
 **Inspector**
 
