@@ -14,6 +14,26 @@
 
 # Conceitos da Cloud & AWS
 
+### Computação em Nuvem (Cloud Computing)
+- A pratica de usar uma rede de servidores remotos hospedados na internet para armazenar, gerenciar e processar dados, ao invés de um servidor local ou computador pessoal.
+
+### On-Premise VS Cloud
+
+| On-Premise (Servidores Locais) | Cloud Computing (Servidores na Nuvem) |
+|--------------------------------|---------------------------------------|
+| Você mantém os servidores.     | O provedor é responsável pela infraestrutura física. |
+| Você contrata e gerencia a equipe de infraestrutura física. | O provedor contrata e gerencia a equipe de infraestrutura física. |
+| Pagamento ou aluguel de equipamentos. | O provedor paga pelos equipamentos e manutenção. |
+| Você assume os riscos físicos. | Você configura o código e serviços, o provedor assume os riscos físicos |
+
+### Vantagens da cloud
+
+- Flexibilidade
+- Escalabilidade
+- Segurança
+- Custo-Benefício
+- Altamente configurável
+
 ### ☁ Tipos de serviços cloud
 - **IaaS**: Infraestrutura como serviço.
 - **PaaS**: Plataforma como Serviço.
