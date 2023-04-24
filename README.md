@@ -82,21 +82,38 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
 
 ### 🌎 Infraestrutura Global
 
-A AWS possui datacenters distribuídos globalmente e conectados físicamente uns aos outros para que funcione como um recurso de larga escala para o consumidor final.
+A AWS possui datacenters distribuídos globalmente e conectados físicamente uns aos outros para que funcione como um recurso de larga escala ao consumidor final.
 
-- Regiões
-  - Áreas geográficas para oferecer serviços em nuvem
-- Zonas de Disponibilidade (AZs)
-  - Data centers fisicamente separados dentro de uma região
-- Direct Connection Locations
-  - Locais de interconexão de rede direta.
-- Points of Presence
-  - Pontos de presença para distribuir conteúdo em todo o mundo
-- Local Zone
-  - Extensão de uma região para infraestrutura em nuvem de baixa latência
-- Wavelenght Zones
-  - Zonas de disponibilidade para conectividade ultrarrápida.
+**Regiões**
+- Áreas geográficas para oferecer serviços em nuvem
+- Possui multíplas AZs
 
+**Zonas de Disponibilidade (AZ)**
+- Um ou mais data centers fisicamente separados dentro de uma região
+- Todas as AZs são interconectadas em até 100km (60 milhas)
+- Próximas o suficiente para ter uma baixa latência
+- Longe o suficiente para evitar que desastres naturais afetem a disponibilidade
+- Uma região geralmente contém 3 AZs
+- É uma boa prática executar carga de trabalho nas 3 AZs para garantir alta disponibilidade
+- São representados pelo código da região seguido de uma letra. Exemplo: us-east-1**a**
+- Associadas a uma subnet
+
+**Direct Connection Locations**
+- Locais de interconexão de rede direta.
+  
+**Points of Presence (PoP)**
+- Pontos de presença para distribuir conteúdo em todo o mundo
+- É um datacenter que pertence a AWS ou um parceiro
+- Pode ser um Edge Location ou Regional Edge Caches
+  
+**Local Zone**
+- Extensão de uma região para infraestrutura em nuvem de baixa latência
+  
+**Wavelenght Zones**
+- Zonas de disponibilidade para conectividade ultrarrápida
+
+**Edge Locations**
+- Permitem o armazenamento em cache de conteúdo e a entrega de serviços com baixa latência aos usuários finais.
 
 ### 🤝 Modelo de responsabilidade compartilhada
 
