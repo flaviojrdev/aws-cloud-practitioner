@@ -96,6 +96,8 @@
 
 **Redshift**
 
+<hr>
+
 ### 🛠 Ferramentas de Desenvolvedor
 
 **CodeBuild**
@@ -108,10 +110,14 @@
 
 **CodeStar**
 
+<hr>
+
 ### 👥 Interação com os Clientes
 
 **Amazon Connect**
- 
+
+<hr>
+
 ### 🔍 Gerenciamento, Monitoramento e Governança
 
 **Auto Scaling**
@@ -144,6 +150,8 @@
 
 **Trusted Advisor**
 
+<hr>
+
 ### 🌐 Redes e Entrega de Conteúdo
 
 **API Gateway**
@@ -153,6 +161,8 @@
 **Direct Connect**
 
 **VPC (Virtual Private Cloud)**
+
+<hr>
 
 ### 🛡 Segurança, Identidade e Conformidade
 
@@ -179,6 +189,8 @@
 **Shield**
 
 **WAF**
+
+<hr>
 
 ### 🗃 Armazenamento
 
