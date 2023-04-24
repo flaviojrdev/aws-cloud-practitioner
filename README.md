@@ -8,16 +8,19 @@
 | Faturamento e preços     | 16%        |
 | **TOTAL**                | **100%**   |
 
-- **Tempo**: 90 minutos (Podendo solicitar mais 30 minutos caso faça em língua estrangeira).
-- **Questões não pontuadas**: 15 das 65 questões são apenas testes para provas futuras e não contabilizam pontos.
-- **Acertos mínimos**: 70% (35 das 50 questões pontuadas).
+**Tempo da prova**: 90 minutos (Podendo solicitar mais 30 minutos caso faça em língua estrangeira).
+
+**Questões não pontuadas**: 15 das 65 questões são apenas questões testes para ajudar a melhorar provas futuras e não contabilizam pontos.
+
+**Acertos mínimos**: 70% (35 das 50 questões pontuadas).
 
 # Conceitos da Cloud & AWS
 
-### Computação em Nuvem (Cloud Computing)
-- A pratica de usar uma rede de servidores remotos hospedados na internet para armazenar, gerenciar e processar dados, ao invés de um servidor local ou computador pessoal.
+### ☁ Computação em Nuvem (Cloud Computing)
 
-### On-Premise VS Cloud
+A pratica de usar uma rede de servidores remotos hospedados na internet para armazenar, gerenciar e processar dados, ao invés de um servidor local ou computador pessoal.
+
+### 🥊 On-Premise VS Cloud
 
 | On-Premise (Servidores Locais) | Cloud Computing (Servidores na Nuvem) |
 |--------------------------------|---------------------------------------|
@@ -26,20 +29,77 @@
 | Pagamento ou aluguel de equipamentos. | O provedor paga pelos equipamentos e manutenção. |
 | Você assume os riscos físicos. | Você configura o código e serviços, o provedor assume os riscos físicos |
 
-### Vantagens da cloud
+### 🫰 Vantagens da cloud
 
-- Flexibilidade
-- Escalabilidade
+#### Nova documentação
+
+- Agilidade
+- Pay-as-you-go (pague o que usar)
+  - Troca de capital expense (gastos com infraestrutura de TI) por variable expense (gastos variáveis com serviços em nuvem)
+- Economy of scale (economia de escala)
+  - Você está dividindo os custos do servidor com outros clientes
+  - Centena de milhares de clientes utilizando uma fração do servidor
+- Infraestrutura global
 - Segurança
-- Custo-Benefício
-- Altamente configurável
+- Confiabilidade
+- Alta disponibilidade
+- Elasticidade
 
-### ☁ Tipos de serviços cloud
-- **IaaS**: Infraestrutura como serviço.
-- **PaaS**: Plataforma como Serviço.
-- **SaaS**: Software como Serviço.
+#### Antiga documentação
+
+- Trade capital expense for variable expense
+- Benefit from massive economies of scale
+- Stop guessing capacity
+- Increase speed and agility
+- Stop spending money on running and maintaining data center
+- Go global in minutes
+
+### ➡ Tipos de serviços cloud
+
+- **IaaS**: Infraestrutura como serviço
+  - Computação
+  - Rede
+  - Banco de Dados
+  - Armazenamento
+- **PaaS**: Plataforma como Serviço
+  - Ambiente de desenvolvimento
+  - Ferramentas de suporte
+  - Bibliotecas de código
+- **SaaS**: Software como Serviço
+  - Aplicações completas
+  - Modelos de assinatura
+
+### 📚 Modelos de implantação de nuvem (Deployment Models)
+
+- Público
+  - Tudo é construído no provedor cloud.
+- Privado
+  - Tudo é construído no datacenter da empresa (On-Premise).
+- Híbrido
+  - Usa ambos On-Premsise e provedor cloud.
+- Cross-Cloud
+  - Usa múltiplos provedores cloud.
+
+### 🌎 Infraestrutura Global
+
+A AWS possui datacenters distribuídos globalmente e conectados físicamente uns aos outros para que funcione como um recurso de larga escala para o consumidor final.
+
+- Regiões
+  - Áreas geográficas para oferecer serviços em nuvem
+- Zonas de Disponibilidade (AZs)
+  - Data centers fisicamente separados dentro de uma região
+- Direct Connection Locations
+  - Locais de interconexão de rede direta.
+- Points of Presence
+  - Pontos de presença para distribuir conteúdo em todo o mundo
+- Local Zone
+  - Extensão de uma região para infraestrutura em nuvem de baixa latência
+- Wavelenght Zones
+  - Zonas de disponibilidade para conectividade ultrarrápida.
+
 
 ### 🤝 Modelo de responsabilidade compartilhada
+
 - O cliente é responsável pela segurança **na** nuvem e a AWS a segurança e infraestrutura **da** nuvem.
 - A AWS protege o data center, enquanto o cliente protege as aplicações.
 
