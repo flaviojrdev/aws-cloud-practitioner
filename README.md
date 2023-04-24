@@ -33,150 +33,165 @@
 
 # Serviços da AWS
 
-### Análises
+### 📊 Análises
 
-**📊 Athena**
+**Athena**
 
-** Kinesis**
+**Kinesis**
 
-** QuickSight**
-
-### Integração de aplicações
-
-**📨 SQS (Simple Queue Service)**
-- Serviço de fila de mensagens que permite o desacoplamento entre serviços.
-- Permite a comunicação assíncrona entre os serviços da AWS e aplicações externas.
-
-**📩 SNS (Simple Notification Service)**
-- Serviço de envio de notificações por mensagem.
-- Permite enviar mensagens por SMS, email, HTTP ou HTTPS para diferentes plataformas e aplicações.
-
-### Autenticação e Autorização
-
-**🔑 IAM (Identity and Access Management)**
-- Serviço de gerenciamento de identidade e acesso na AWS.
-- Permite criar e gerenciar usuários, grupos e permissões de acesso aos recursos.
-
-**🔐 Cognito**
-- Serviço de autenticação e autorização de usuários em aplicativos web e móveis.
-- Permite criar e gerenciar usuários, grupos e tokens de autenticação.
+**QuickSight**
 
 <hr>
 
-### Computação
+### 📩 Integração de aplicações
 
-**🖥 EC2 (Elastic Computing 2)**
+**SNS (Simple Notification Service)**
+
+**SQS (Simple Queue Service)**
+
+<hr>
+
+### 🔑 Autenticação e Autorização
+
+**IAM (Identity and Access Management)**
+
+**Cognito**
+
+<hr>
+
+### 🖥 Computação & Serverless
+
+**EC2 (Elastic Computing 2)**
 - Serviço de servidores virtuais
 
-**🛠 Batch**
+**Batch**
 
+**Elastic Beanstalk**
 
-**🚀 Elastic Beanstalk**
+**Lambda**
 
+**Lightsail**
 
-**⚡ Lambda**
-
-
-**⛵ Lightsail**
-
-
-**💼 Workspaces**
+**Workspaces**
 
 <hr>
 
-### Armazenamento
+### Contêineres
 
-**🪣 S3 (Simple Storage Service)**
-- Armazena arquivos em forma de objetos (documento + metadado do documento)
+**ECS (Elastic Container Service)**
 
-EBS
+**EKS (Amazon Elastic Kubernetes Service**
 
-EFS
-
-<hr>
-
-### Banco de dados
-
-**🛢 RDS (Relational Database Service)**
-- Banco de dados gerenciado para bancos de dados relacionais.
+**Fargate**
 
 <hr>
 
-### Versionamento
+### 🛢 Banco de Dados
 
-**🗒 CodeCommit**
-- Serviço de versionamento git semelhante ao GitHub.
+**Aurora**
 
-<hr>
+**DynamoDB**
 
-### Rede
+**RDS (Relational Database Service)**
 
-**🌐 VPC (Virtual Private Cloud)**
-- Serviço de rede que permite a criação de uma rede virtual isolada na nuvem da AWS.
-- Permite a criação de sub-redes, roteadores, gateways, grupos de segurança, entre outros recursos.
+**Redshift**
 
-**👥 ELB (Elastic Load Balancing)**
-- Serviço que distribui o tráfego de entrada entre várias instâncias EC2 para aumentar a escalabilidade e a disponibilidade do aplicativo.
+### 🛠 Ferramentas de Desenvolvedor
 
-<hr>
+**CodeBuild**
 
-### Integração e Entrega Contínua (CI/CD)
+**CodeCommit**
 
-**🚀 CodePipeline**
-- Serviço de automação para o processo de entrega contínua.
-- Permite a criação de pipelines de implantação, teste e integração.
+**CodeDeploy**
 
-**🛡️ CloudFormation**
-- Serviço para provisionar e gerenciar recursos de infraestrutura na AWS de forma automática e consistente.
-- Permite a criação de modelos de infraestrutura em formato JSON ou YAML.
+**CodePipeline**
 
-<hr>
+**CodeStar**
 
-### Análise de Dados
+### 👥 Interação com os Clientes
 
-**📈 Redshift**
-- Serviço de data warehousing que permite a análise de grandes volumes de dados utilizando ferramentas de Business Intelligence (BI).
+**Amazon Connect**
+ 
+### 🔍 Gerenciamento, Monitoramento e Governança
 
+**Auto Scaling**
 
+**Budgets**
 
-**🧮 Glue**
-- Serviço de ETL (Extract, Transform and Load) totalmente gerenciado.
-- Permite a integração de dados de diferentes fontes para análise e criação de relatórios. 
+**CloudFormation**
 
-<hr>
+**CloudTrail**
 
-### Monitoramento e Log
+**CloudWatch**
 
-**🔍 CloudWatch**
-- Serviço de monitoramento e observação dos recursos e aplicações da AWS.
-- Permite monitorar logs, métricas, eventos, alarmes e criar dashboards personalizados.
+**AWS Config**
 
-**📜 CloudTrail**
-- Serviço de registro de auditoria da AWS.
-- Permite registrar todas as atividades realizadas nas contas da AWS, incluindo ações realizadas pelos usuários e pelos serviços.
+**Relatório de Custos e Uso da AWS**
 
-**🚨 GuardDuty**
-- Serviço de detecção de ameaças de segurança.
-- Utiliza técnicas de machine learning para analisar eventos de várias fontes e detectar atividades maliciosas.
+**EventBridge (CloudWatch Events)**
 
-<hr>
+**License Manager**
 
-### Inteligência Artificial e Machine Learning
+**Managed Services**
 
-**🤖 SageMaker**
-- Serviço de machine learning totalmente gerenciado.
-- Permite treinar, criar e implantar modelos de machine learning de forma rápida e fácil.
+**Organizations**
 
-**🧠 Rekognition**
-- Serviço de reconhecimento de imagem e vídeo baseado em machine learning.
-- Permite identificar objetos, pessoas, texto e emoções em imagens e vídeos.
+**Secrets Manager**
 
-**👁‍🗨 Comprehend**
-- Serviço de processamento de linguagem natural baseado em machine learning.
-- Permite identificar informações importantes em texto, como sentimentos, entidades, idiomas e tópicos.
+**Systems Manager**
 
-<hr>
+**Systems Manager Parameter Store**
 
-### Mensageria
+**Trusted Advisor**
 
+### 🌐 Redes e Entrega de Conteúdo
 
+**API Gateway**
+
+**CloudFront**
+
+**Direct Connect**
+
+**VPC (Virtual Private Cloud)**
+
+### 🛡 Segurança, Identidade e Conformidade
+
+**Artifact**
+
+**ACM (AWS Certificate Manager)**
+
+**CloudHSM**
+
+**Cognito**
+
+**Detective**
+
+**GuardDuty**
+
+**IAM (Identity and Acess Management)
+
+**Inspector**
+
+**License Manager**
+
+**Macie**
+
+**Shield**
+
+**WAF**
+
+### 🗃 Armazenamento
+
+**AWS Backup**
+
+**EBS (Elastic Block Store)**
+
+**EFS (Elastic File System)**
+
+**S3 (Simple Storage Service)**
+
+**S3 Glacier**
+
+**Snowball Edge**
+
+**Storage Gateway**
