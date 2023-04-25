@@ -113,12 +113,38 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 - Zonas de disponibilidade para conectividade ultrarrápida
 
 **Edge Locations**
-- Permitem o armazenamento em cache de conteúdo e a entrega de serviços com baixa latência aos usuários finais.
+- Permitem o armazenamento em cache de conteúdo e a entrega de serviços com baixa latência aos usuários finais
+
+**AWS Outposts**
+- Servidores físicos que podem ser colocados no data center, seus dados vão residenter onde o outposts estiver
 
 ### 🤝 Modelo de responsabilidade compartilhada
 
 - O cliente é responsável pela segurança **na** nuvem e a AWS a segurança e infraestrutura **da** nuvem.
 - A AWS protege o data center, enquanto o cliente protege as aplicações.
+
+### ↔ Alta Disponibilidade
+
+Fato de poder aumentar a sua capacidade baseado no aumento da demanda de tráfego, memória ou poder computacional.
+
+- Escala Vertical X Horizontal
+  - Vertical: Aumentar o poder computacional de um servidor
+  - Horizontal: Aumentar o número de servidores
+
+- Elastic Load Balancer (Distribuição de Carga de Tráfego)
+  - Distruibui o tráfego para multiplos servidores em um ou mais datacenters (AZs)  
+
+- Escala vertical
+  - Para fora: Adicionar mais servidores do mesmo tamanho
+  - Para dentro: Remover servidores sub-utilizados do mesmo tamanho
+
+### ❌ Tolerância a Falhas
+
+Fato do seu serviço garantir que não há um único ponto de falha. Previnir a chance de falhas.
+
+### 🐢 Alta Durabilidade
+
+Habilidade de recuperação de desastres (Disaster Recovery ou DR) e prevenção de perda de dados.
 
 ### 🏗 AWS Well-Architected Framework (6 pilares): Melhores Práticas
 
@@ -236,6 +262,7 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 ### 🔍 Gerenciamento, Monitoramento e Governança
 
 **Auto Scaling**
+- ASG (Auto Scaling Groups): Automaticamente remove ou adiciona servidores baseado nas regras de escalonamento que você define baseado em métricas
 
 **Budgets**
 
@@ -246,6 +273,7 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 **CloudWatch**
 
 **AWS Config**
+- Serviço de políticas/regras como códigos. Você pode criar regras para verificar as configurações dos seus recursos, caso desviem do estipulado você será alertado ou em alguns casos será auto remediado.
 
 **Relatório de Custos e Uso da AWS**
 
@@ -272,8 +300,12 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 **API Gateway**
 
 **CloudFront**
+- CDN (Content Delivery Network) ou serviço de entrega de conteúdo
+- Roteia requisições aos Edge Locations mais próximos
 
 **Direct Connect**
+- Conexão direta/privada do seu datacenter com a AWS
+- Possui Direct Connect Locations que são datacenter de parceiros 
 
 **VPC (Virtual Private Cloud)**
 
