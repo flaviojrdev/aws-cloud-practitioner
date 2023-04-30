@@ -1,4 +1,4 @@
-# Informações da Prova
+# 📓 Informações da Prova
 
 | Domínio                  | % do exame |
 |--------------------------|------------|
@@ -14,13 +14,13 @@
 
 **Acertos mínimos**: 70% (35 das 50 questões pontuadas).
 
-# Conceitos da Cloud & AWS
+# ☁ Conceitos gerais de cloud
 
-### ☁ Computação em Nuvem (Cloud Computing)
+### Computação em Nuvem (Cloud Computing)
 
 A pratica de usar uma rede de servidores remotos hospedados na internet para armazenar, gerenciar e processar dados, ao invés de um servidor local ou computador pessoal.
 
-### 🥊 On-Premise VS Cloud
+### On-Premise VS Cloud
 
 | On-Premise (Servidores Locais) | Cloud Computing (Servidores na Nuvem) |
 |--------------------------------|---------------------------------------|
@@ -29,7 +29,7 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
 | Pagamento ou aluguel de equipamentos. | O provedor paga pelos equipamentos e manutenção. |
 | Você assume os riscos físicos. | Você configura o código e serviços, o provedor assume os riscos físicos |
 
-### 🫰 Vantagens da cloud
+### Vantagens da cloud
 
 #### Nova documentação
 
@@ -54,7 +54,7 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
 - Stop spending money on running and maintaining data center
 - Go global in minutes
 
-### ➡ Tipos de serviços cloud
+### Tipos de serviços cloud
 
 - **IaaS**: Infraestrutura como serviço
   - Computação
@@ -69,7 +69,7 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
   - Aplicações completas
   - Modelos de assinatura
 
-### 📚 Modelos de implantação de nuvem (Deployment Models)
+### Modelos de implantação de nuvem (Deployment Models)
 
 - Público
   - Tudo é construído no provedor cloud.
@@ -80,7 +80,9 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
 - Cross-Cloud
   - Usa múltiplos provedores cloud.
 
-### 🌎 Infraestrutura Global
+# 👨‍💻 Conceitos gerais da AWS
+
+### Infraestrutura Global
 
 A AWS possui datacenters distribuídos globalmente e conectados físicamente uns aos outros para que funcione como um recurso de larga escala ao consumidor final.
 
@@ -118,35 +120,12 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 **AWS Outposts**
 - Servidores físicos que podem ser colocados no data center, seus dados vão residenter onde o outposts estiver
 
-### 🤝 Modelo de responsabilidade compartilhada
+### Modelo de responsabilidade compartilhada
 
 - O cliente é responsável pela segurança **na** nuvem e a AWS a segurança e infraestrutura **da** nuvem.
 - A AWS protege o data center, enquanto o cliente protege as aplicações.
 
-### ↔ Alta Disponibilidade
-
-Fato de poder aumentar a sua capacidade baseado no aumento da demanda de tráfego, memória ou poder computacional.
-
-- Escala Vertical X Horizontal
-  - Vertical: Aumentar o poder computacional de um servidor
-  - Horizontal: Aumentar o número de servidores
-
-- Elastic Load Balancer (Distribuição de Carga de Tráfego)
-  - Distruibui o tráfego para multiplos servidores em um ou mais datacenters (AZs)  
-
-- Escala vertical
-  - Para fora: Adicionar mais servidores do mesmo tamanho
-  - Para dentro: Remover servidores sub-utilizados do mesmo tamanho
-
-### ❌ Tolerância a Falhas
-
-Fato do seu serviço garantir que não há um único ponto de falha. Previnir a chance de falhas.
-
-### 🐢 Alta Durabilidade
-
-Habilidade de recuperação de desastres (Disaster Recovery ou DR) e prevenção de perda de dados.
-
-### 🏗 AWS Well-Architected Framework (6 pilares): Melhores Práticas
+### AWS Well-Architected Framework (6 pilares): Melhores Práticas
 
 **Excelência Operacional**: Execução e monitoramento sistemas e melhoria contínua de processos e procedimentos.
 - Performar operações como código.
@@ -172,7 +151,24 @@ Habilidade de recuperação de desastres (Disaster Recovery ou DR) e prevenção
 
 **Sustentabilidade**
 
-# Serviços da AWS
+# 🔧 Ferramentas de Gerenciamento e Desenvolvimento
+
+### AWS Command Line Interface (CLI)
+
+- Permite interagir com a API AWS via comandos no shell
+- É um programa executável em Python (logo requer o Python instalado)
+
+### AWS Software Development Kit (SDK)
+
+- É uma coleção de ferramentas de desenvolvimento em um único pacote instalável
+- Oferecido em diversas linguagens
+
+### AWS CloudShell
+
+- É um shell baseado em navegador implementado no console de gerenciamento da AWS
+- Escopo por região (1GB de armazenamento grátis por região)
+
+# ⚙ Serviços da AWS
 
 ### 📊 Análises
 
