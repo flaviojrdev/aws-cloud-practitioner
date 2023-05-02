@@ -200,14 +200,20 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 
 **EC2 (Elastic Computing 2)**
 - Serviço de servidores virtuais
+- Altamente configurável, permite escolher uma AMI (Amazon Machine Image) que afeta:
+  - CPU, RAM, largura de banda, OS, etc...
 
 **Batch**
 
 **Elastic Beanstalk**
 
 **Lambda**
+- Serviço serverless baseado em funções
+- Você apenas se preocupa com o código e abstrai todo o resto
 
 **Lightsail**
+- Serviço gerenciado de servidores virtuais
+- Maior abstração do que os EC2
 
 **Workspaces**
 
@@ -216,10 +222,20 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 ### 📦 Contêineres
 
 **ECS (Elastic Container Service)**
+- Serviço de orquestração de container
+- Suporta Docker
+- Provisiona um cluster de servidores em instancias EC2 com Docker instalado
+
+**ECR (Elastic Container Registry)**
+- Repositório para imagens de container
 
 **EKS (Amazon Elastic Kubernetes Service**
+- Serviço de Kubernetes (K8) totalmente gerenciado
+- Usado geralmente para gerenciar microserviços
 
 **Fargate**
+- Serviço serverless de orquestração de containers
+- Maior abstração do que o ECS
 
 <hr>
 
