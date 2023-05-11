@@ -76,7 +76,7 @@ A pratica de usar uma rede de servidores remotos hospedados na internet para arm
 - Privado
   - Tudo é construído no datacenter da empresa (On-Premise).
 - Híbrido
-  - Usa ambos On-Premsise e provedor cloud.
+  - Usa ambos On-Premise e provedor cloud.
 - Cross-Cloud
   - Usa múltiplos provedores cloud.
 
@@ -366,3 +366,106 @@ A AWS possui datacenters distribuídos globalmente e conectados físicamente uns
 **Snowball Edge**
 
 **Storage Gateway**
+
+<hr>
+
+## 🐣 Conceitos Básicos da Cloud e AWS
+
+### Cloud computing models
+
+- **IaaS** - Gerenciado até o sistema operacional
+- **PaaS** - Gerenciado até o código
+- **SaaS** - Apenas consumo
+
+### Cloud deployment
+
+- **Public Cloud** - AWS, Azure, GCP
+- **Private Cloud** - Gerenciado em data centers particulares usando (geralmente) Hyper-V, VMware ou OpenStack
+- **Hybrid Cloud** - Mistura de ambos públicos e privados
+- **Multicloud** - Clouds públicas/privadas de vários fornecedores diferentes
+
+### Fundamentals of pricing
+
+- **Compute** - CPU/RAM e duração
+- **Storage** - Quantidade de dados armazenados ou alocados
+- **Outbound data transfer** - Dados saindo de uma região AWS
+
+### Global Infrastructure
+
+- **AWS Regions**
+  - Area geográfica
+  - Possui 2 ou mais AZs
+  - Isolada de outras regiões
+- **Availability Zones**
+  - AZs são físicamente separadas/isoladas de umas das outras
+  - AZs possuem um ou mais data centers
+  - Cada AZ é independente com objetivo de tolerância a falhas
+- **Local Zones**
+  - Local Zones colocam serviços seletos da AWS próximos ao usuário final para redução de latência
+  - São uma extensão de uma região
+- **Edge Locations e Regional Edge Caches**
+  - São endpoints de Content Delivery Network (CDN) usados pelo CloudFront
+  - Existem mais Edge Locations do que regiões
+  - Regional Edge Caches ficam entre os servidores de origem do CloudFront e as Edge Locations
+
+### Shared Responsability Model
+
+- AWS cuida da segurança DA nuvem
+  - Responsável pela infraestrutura (seja física ou virtual)
+- O cliente cuida da segurança NA nuvem
+  - Responsável pela segurança da rede, acesso de funcionários, encriptação de dados, etc...
+
+### 6 Advantages of Cloud
+
+- Troque custo capital por custo variável
+- Benefício de economia de escala
+- Pare de deduzir capacidade
+- Mais velocidade e agilidade
+- Pare de gastar dinheiro com manutenção de data centers
+- Global em minutos
+
+## 🔑 IAM
+
+### AWS Identity and Acess Management (IAM)
+
+#### Definição
+
+- Serviço de controle de acesso aos recursos da AWS
+- Com IAM você controla quem está autenticado e autorizado e tem permissão para utilizar os recursos
+- Usuários são contas individuais que você loga
+- Usuários não tem permissões por padrão
+
+#### Grupos, policies e roles
+
+- Grupos são usados para organizar usuários e aplicar policies
+- Policies são usadas para definir permissões
+- Roles são usados para distribuir permissões
+
+#### Acess Keys
+
+- Acess Keys são usadas para acesso a CLI/API (programático)
+- Acess Keys consistem de um acess key ID e uma secret acess key
+
+### Segurança
+
+- O usuário root é quem criou a conta
+- Usuários root possuem permissões totais e não podem ser restringidos
+- Autenticação de Multi Fator (MFA) usa um segundo fator além da senha - geralmente código gerado por um dispositivo móvel
+
+### SCP
+
+- Service Control Policies (SCP) são um recurso da AWS Organizations
+- SCPs controlam o máximo de permissões disponíveis de uma conta
+- SCPs não fornecem permissões
+
+### Boas Práticas IAM
+
+- Proteja sua conta root e seus access keys
+- Crie usuários IAM individuais
+- Use grupos para fornecer permissões para usuários IAM
+- Mínimo privilégio (de apenas as permissões necessárias)
+- Use permissões com a AWS managed policies
+- Configure senhas fortes
+- Habilite MFA
+- Rotacione credenciais com regularidade
+- Remova credenciais que não estão em utilização
